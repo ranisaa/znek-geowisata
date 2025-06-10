@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "Fasilitas_Transportasi_84",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "FasilitasTransportasi.1", "oid_": 0, "name": "Terminal Wisata Palbarang", "folderpath": "TA.kmz/TA/Transportasi", "symbolid": 0, "altmode": -1, "base": 0, "snippet": null, "popupinfo": null, "haslabel": -1, "labelid": 0, "fasil": "Transportasi" }, "geometry": { "type": "Point", "coordinates": [ 110.344947, -7.226693, 0.0 ] } },
+{ "type": "Feature", "properties": { "id": "FasilitasTransportasi.2", "oid_": 0, "name": "Pertamina", "folderpath": "TA.kmz/TA/Transportasi", "symbolid": 0, "altmode": -1, "base": 0, "snippet": null, "popupinfo": null, "haslabel": -1, "labelid": 0, "fasil": "Transportasi" }, "geometry": { "type": "Point", "coordinates": [ 110.346789, -7.228071, 0.0 ] } }
+]
+}
