@@ -1,0 +1,13 @@
+{
+"type": "FeatureCollection",
+"name": "Fasilitas_Pelayanan_Umum_84",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "FasilitasPelayananUmum.1", "oid_": 0, "name": "Kantor Kecamatan Bandungan", "folderpath": "TA.kmz/TA/Sarana Pelayanan Umum", "symbolid": 0, "altmode": -1, "base": 0, "snippet": null, "popupinfo": null, "haslabel": -1, "labelid": 0, "fasil": "Pelayanan Umum" }, "geometry": { "type": "Point", "coordinates": [ 110.366512, -7.222716, 0.0 ] } },
+{ "type": "Feature", "properties": { "id": "FasilitasPelayananUmum.2", "oid_": 0, "name": "\"Kantor Kepala Desa KentengBadan Permusyawaratan Desa Kenteng\"", "folderpath": "TA.kmz/TA/Sarana Pelayanan Umum", "symbolid": 0, "altmode": -1, "base": 0, "snippet": null, "popupinfo": null, "haslabel": -1, "labelid": 0, "fasil": "Pelayanan Umum" }, "geometry": { "type": "Point", "coordinates": [ 110.363638, -7.224505, 0.0 ] } },
+{ "type": "Feature", "properties": { "id": "FasilitasPelayananUmum.3", "oid_": 0, "name": "KSP \"Kopdit Pelita Usaha\"", "folderpath": "TA.kmz/TA/Sarana Pelayanan Umum", "symbolid": 0, "altmode": -1, "base": 0, "snippet": null, "popupinfo": null, "haslabel": -1, "labelid": 0, "fasil": "Pelayanan Umum" }, "geometry": { "type": "Point", "coordinates": [ 110.361751, -7.226353, 0.0 ] } },
+{ "type": "Feature", "properties": { "id": "FasilitasPelayananUmum.4", "oid_": 0, "name": "Polri Daerah Jawa Tengah Resor Semarang Sektor Bandungan", "folderpath": "TA.kmz/TA/Sarana Pelayanan Umum", "symbolid": 0, "altmode": -1, "base": 0, "snippet": null, "popupinfo": null, "haslabel": -1, "labelid": 0, "fasil": "Pelayanan Umum" }, "geometry": { "type": "Point", "coordinates": [ 110.358766, -7.228196, 0.0 ] } },
+{ "type": "Feature", "properties": { "id": "FasilitasPelayananUmum.5", "oid_": 0, "name": "Kantor Koperasi Jasa Transportasi Wisata G-9", "folderpath": "TA.kmz/TA/Sarana Pelayanan Umum", "symbolid": 0, "altmode": -1, "base": 0, "snippet": null, "popupinfo": null, "haslabel": -1, "labelid": 0, "fasil": "Pelayanan Umum" }, "geometry": { "type": "Point", "coordinates": [ 110.345219, -7.226591, 0.0 ] } },
+{ "type": "Feature", "properties": { "id": "FasilitasPelayananUmum.6", "oid_": 0, "name": "Kantor Desa Candi", "folderpath": "TA.kmz/TA/Sarana Pelayanan Umum", "symbolid": 0, "altmode": -1, "base": 0, "snippet": null, "popupinfo": null, "haslabel": -1, "labelid": 0, "fasil": "Pelayanan Umum" }, "geometry": { "type": "Point", "coordinates": [ 110.340522000000107, -7.226889, 0.0 ] } }
+]
+}
