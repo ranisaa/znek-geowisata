@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GEOWISATA GEDONG SONGO & CELOSIA</title>
+
+  <!--My Style-->
+  <link rel="stylesheet" href="style.css">
+
+  <!--Feather Icons-->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.fullscreen/Control.FullScreen.css" />
+  <script src="https://unpkg.com/leaflet.fullscreen/Control.FullScreen.js"></script>
+
+  <style>
+  .leaflet-control-layers-overlays label {
+    text-align: left !important;
+    display: block;
+    width: 100%;
+  }
+  </style>
+</head>
+
+<body>
+
+  <!--Navbar Start-->
+  <nav class="navbar">
+    <a href="#" class="navbar-logo">GEOWISATA</a>
+    <div class="navbar-nav">
+      <a href="#home">HOME</a>
+      <a href="#general">GAMBARAN UMUM</a>
+      <a href="#candi">CANDI GEDONG SONGO</a>
+      <a href="#celosia">TAMAN BUNGA CELOSIA</a>
+      <a href="#map">PETA</a>
+      <a href="#service">LAYANAN</a>
+    </div>
+
+    <div class="navbar-extra">
+      <a href="javascript:void(0)" id="hamburger-menu"><i data-feather="menu"></i></a>
+    </div>
+  </nav>
+  <!--Navbar End-->
+
+  <!--Main Content Start-->
+  <main>
+  <!--Hero Section Start-->
+  <section class="hero page-section active" id="home">
+    <div class="content">
+      <h1>Selamat Datang di <span>GEOWISATA</span></h1>
+      <p><i>Website</i> Zona Nilai Ekonomi Kawasan Wisata <strong>Candi Gedong Songo</strong> dan <strong>Taman Bunga Celosia</strong> yang terletak di <strong>Desa Candi</strong>, Kecamatan Bandungan, Kabupaten Semarang</p>
+      <a href="#general" class="cta">Jelajahi</a>
+    </div>
+  </section>
+  <!--Hero Section End-->
+
+  <!--General Section Start-->
+  <section class="general page-section" id="general">
+    <h2>GAMBARAN UMUM</h2>
+    <div class="content2">
+      <h3>Zona Nilai Ekonomi Kawasan</h3>
+      <p>Zona Nilai Ekonomi Kawasan menunjukkan nilai berdasarkan pemanfaatan lahan dan potensinya. Nilai ekonomi kawasan diperoleh berdasarkan hasil TCM dan CVM.</p>
+    <div class="methods">
+        <div class="method">
+            <h4><i>Travel Cost Method</i> (TCM)</h4>
+              <p>Menilai objek tanpa pasar langsung dengan mengukur biaya dan waktu wisatawan.</p>
+              <p>Hasil TCM disebut <strong><i>Direct Use Value</i> (DUV) atau Nilai Guna Langsung</strong>.</p>
+              <p>Diperoleh berdasarkan hasil kuesioner dengan <strong>responden pengunjung</strong> kawasan wisata.</p>
+        </div>
+        <div class="method">
+            <h4><i>Contingent Valuation Method</i> (CVM)</h4>
+              <p>Menggunakan survei untuk mengetahui kesediaan bayar <span>Willingness To Pay</span> (WTP) individu dalam menjaga sumber daya alam.</p>
+              <p>Hasil CVM disebut <strong><span>Existence Value</span> (EV) atau Nilai Keberadaan</strong>.</p>
+              <p>Diperoleh berdasarkan hasil kuesioner dengan <strong>responden pekerja</strong> di kawasan wisata.</p>
+        </div>
+        <div class="method">
+            <h4><i>Hedonic Pricing Method</i> (HPM)</h4>
+              <p>Mengukur nilai kesukaan kawasan wisata yang memengaruhi permintaan, dengan model ekonometrik menilai pengaruh kualitas dan kuantitas aspek wisata terhadap kepuasan dan permintaan.</p>
+        </div>
+    </div>
+    </div>
+      <div class="info-pair">
+        <div class="about-img">
+          <img src="img/lokasi.png" alt="Peta Lokasi">
+        </div>
+        <div class="info-box">
+          <h3>Desa Candi</h3>
+          <p>Desa Candi di Kecamatan Bandungan, Semarang, Jawa Tengah, dikenal dengan potensi wisata alam, udara sejuk, dan pemandangan indah. Pengembangan Desa Candi sebagai desa wisata memiliki peranan penting dalam mendukung perekonomian lokal sekaligus melestarikan budaya masyarakat setempat. Bandungan, sebagai kawasan wisata populer, menawarkan atraksi alam, budaya, dan buatan, termasuk <span>Candi Gedong Songo</span> dan <span>Taman Bunga Celosia</span> yang menjadi fokus penelitian kami. </p>
+        </div>
+      </div>
+  </section>
+  <!--Profile Section End-->
+
+  <!--Candi Section Start-->
+  <section class="candi page-section" id="candi">
+    <h2>CANDI GEDONG SONGO</h2>
+    <div class="info-pair">
+        <div class="about-img">
+          <img src="img/candi.jpg" alt="Candi">
+        </div>
+        <div class="info-box">
+            <p>Kawasan wisata Candi Gedong Songo memiliki luas wilayah sebesar 17,724 hektar dengan sebaran pengunjung yang berasal dari berbagai daerah di Pulau Jawa. Adapun daerah asal pengunjung terbanyak tercatat berasal dari Kota Semarang dan Kota Surakarta (Solo).</p>
+            <ul>
+              <li>29 kabupaten/kota di Provinsi Jawa Tengah</li>
+              <li>9 kabupaten/kota di Jawa Timur</li>
+              <li>5 kabupaten/kota di Jawa Barat</li>
+              <li>Kota Tangerang, DKI Jakarta, dan Kota Yogyakarta</li>
+            </ul>
+          <h4>Data Pengunjung</h4>
+            <p>Berdasarkan Dinas Pariwisata Kabupaten Semarang, data pengunjung Candi Gedong Songo per-tahun sebagai berikut.</p>
+            <div class="chart-box">
+              <canvas id="chartPengunjungCandi"></canvas>
+            </div>
+        </div>
+    </div>
+
+  <div class="map-box">
+    <h3>Peta Persebaran Asal Pengunjung</h3>
+    <div class="map-row">
+      <div class="map-item">
+        <img src="img/peta_pengunjung_candi.png" alt="Peta Persebaran Asal Pengunjung Candi Gedong Songo">
+      </div>
+    </div>
+  </div>
+
+    <div class="info-box">
+        <h3>Total Nilai Ekonomi</h3>
+        <ul>
+          <li>Hasil <i>Travel Cost Method</i> (TCM) berupa Nilai Guna Langsung (DUV) yaitu ± Rp5.900.000</li>
+          <li>Hasil <i>Contingent Valuation Method</i> (CVM) berupa Nilai Keberadaan (EV) yaitu ± Rp335.400.000</li>
+          <li>Total Nilai Ekonomi atau <i>Total Economic Value</i> (TEV) berdasarkan nilai DUV dan EV yaitu ± Rp341.300.000</li>
+          <li>Hasil <i>Hedonic Pricing Method</i> (HPM) berupa interval dengan nilai terendah yaitu 4,000 dan nilai tertinggi yaitu 4,157.</li>
+        </ul>
+    </div>
+
+    <div class="map-box">
+    <h3>Peta</h3>
+    <div class="map-row">
+        <div class="map-item">
+          <h4>Peta Nilai Guna Langsung</h4>
+          <img src="img/peta_gl_candi.png" alt="Peta Guna Langsung Candi Gedong Songo">
+        </div>
+        <div class="map-item">
+          <h4>Peta Nilai Keberadaan</h4>
+          <img src="img/peta_k_candi.png" alt="Peta Keberadaan Candi Gedong Songo">
+        </div>
+        <div class="map-item">
+          <h4>Peta Nilai Total Ekonomi</h4>
+          <img src="img/peta_te_candi.png" alt="Peta Total Ekonomi Candi Gedong Songo">
+        </div>
+    </div>
+    </div>
+
+    <div class="info-var">
+        <h3>Variabel Pengaruh TEV</h3>
+        <p>Hasil TCM, CVM, dan HPM, masing-masing dipengaruhi oleh variabel yang dapat merepresentasikan karakteristik responden. Penjelasan variabel pada setiap metode sebagai berikut:</p>
+          <div class="chart-group-box">
+            <h4>Variabel <span>Travel Cost Method</span> (TCM)</h4>
+            <p>Berdasarkan 214 responden, berikut variasi jawaban yang diperoleh pada masing-masing variabel.</p>
+            <div class="chart-container">
+              <div class="chart-box">
+                <h5>Frekuensi Kunjungan</h5>
+                <canvas id="pieKunjunganCandi"></canvas>
+              </div>
+              <div class="chart-box">
+                <h5><i>Total Cost</i> (Rp)</h5>
+                <canvas id="pieTotalCandi"></canvas>
+              </div> 
+              <div class="chart-box">
+                <h5>Usia</h5>
+                <canvas id="pieUsiaCandi"></canvas>
+              </div>
+              <div class="chart-box">
+                <h5>Pendidikan</h5>
+                <canvas id="piePendidikanCandi"></canvas>
+              </div> 
+              <div class="chart-box">
+                <h5>Pendapatan Per-Tahun (Rp)</h5>
+                <canvas id="piePendapatanCandi"></canvas>
+              </div>
+              <div class="chart-box">
+                <h5>Lama Kunjungan</h5>
+                <canvas id="pieLamaCandi"></canvas>
+              </div>
+              <div class="chart-box">
+                <h5>Alternatif Wisata</h5>
+                <canvas id="pieAlternatifCandi"></canvas>
+              </div>
+            </div>
+          </div>
+
+          <div class="chart-group-box">
+            <h4>Variabel <span>Contingent Valuation Method</span> (CVM)</h4>
+            <p>Berdasarkan 41 responden, berikut variasi jawaban yang diperoleh pada masing-masing variabel.</p>
+            <div class="chart-container">
+              <div class="chart-box">
+                <h5>Pekerjaan</h5>
+                <canvas id="piePekerjaanCandi"></canvas>
+              </div>
+              <div class="chart-box">
+                <h5>WTP</h5>
+                <canvas id="pieWTPCandi"></canvas>
+              </div> 
+              <div class="chart-box">
+                <h5>Nilai Keberadaan</h5>
+                <canvas id="pieKeberadaanCandi"></canvas>
+              </div>
+              <div class="chart-box">
+                <h5>Usia</h5>
+                <canvas id="pieUsiaCVMCandi"></canvas>
+              </div> 
+              <div class="chart-box">
+                <h5>Pendidikan</h5>
+                <canvas id="piePendidikanCVMCandi"></canvas>
+              </div>
+              <div class="chart-box">
+                <h5>Jumlah Anggota Keluarga</h5>
+                <canvas id="pieKeluargaCandi"></canvas>
+              </div>
+              <div class="chart-box">
+                <h5>Pendapatan</h5>
+                <canvas id="piePendapatanCVMCandi"></canvas>
+              </div>
+              <div class="chart-box">
+                <h5>Nilai Manfaat</h5>
+                <canvas id="pieManfaatCandi"></canvas>
+              </div>
+              <div class="chart-box">
+                <h5>Nilai Kepentingan</h5>
+                <canvas id="pieKepentinganCandi"></canvas>
+              </div>
+              <div class="chart-box">
+                <h5>Konversi</h5>
+                <canvas id="pieKonversiCandi"></canvas>
+              </div>
+              <div class="chart-box">
+                <h5>Partisipasi</h5>
+                <canvas id="piePartisipasiCandi"></canvas>
+              </div>
+            </div>
+          </div>
+
+          <div class="chart-group-box-hpm">
+            <h4>Variabel <span>Hedonic Pricing Method</span> (HPM)</h4>
+            <p>Berdasarkan 145 responden, berikut variasi jawaban yang diperoleh pada masing-masing variabel.</p>
+            <div class="chart-box-hpm">
+              <canvas id="barHPMCandi"></canvas>
+            </div>
+          </div>
+    </div>
+  </section>
+  <!--Candi Section End-->
+
+  <!--Celosia Section Start-->
+  <section class="celosia page-section" id="celosia">
+    <h2>TAMAN BUNGA CELOSIA</h2>
+    <div class="info-pair">
+        <div class="about-img">
+          <img src="img/celosia.jpg" alt="Celosia">
+        </div>
+        <div class="info-box">
+            <p>Kawasan wisata Taman Bunga Celosia memiliki luas wilayah sebesar 5,484 hektar, dengan sebaran pengunjung yang berasal dari berbagai daerah. Adapun daerah asal pengunjung terbanyak tercatat berasal dari Kota Semarang.</p>
+            <ul>
+              <li>35 kabupaten/kota di Provinsi Jawa Tengah</li>
+              <li>13 kabupaten/kota di Jawa Timur</li>
+              <li>6 kabupaten/kota di Jawa Barat</li>
+              <li>Kota Tangerang, DKI Jakarta, Kota Yogyakarta, Kota Medan, dan Kota Pontianak</li>
+            </ul>
+          <h4>Data Pengunjung</h4>
+            <p>Berdasarkan Dinas Pariwisata Kabupaten Semarang, data pengunjung Taman Bunga Celosia per-tahun sebagai berikut.</p>
+            <div class="chart-box">
+              <canvas id="chartPengunjungCelosia"></canvas>
+            </div>
+        </div>
+    </div>
+
+  <div class="map-box">
+    <h3>Peta Persebaran Asal Pengunjung</h3>
+    <div class="map-row">
+      <div class="map-item">
+        <img src="img/peta_pengunjung_celosia.png" alt="Peta Persebaran Asal Pengunjung Taman Bunga Celosia">
+      </div>
+    </div>
+  </div>
+
+    <div class="info-box">
+      <h3>Total Nilai Ekonomi</h3>
+        <ul>
+          <li>Hasil <i>Travel Cost Method</i> (TCM) berupa Nilai Guna Langsung (DUV) yaitu ± Rp5.600.000</li>
+          <li>Hasil <i>Contingent Valuation Method</i> (CVM) berupa Nilai Keberadaan (EV) yaitu ± Rp368.200.000</li>
+          <li>Total Nilai Ekonomi atau <i>Total Economic Value</i> (TEV) berdasarkan nilai DUV dan EV yaitu Rp373.800.000</li>
+          <li>Hasil <i>Hedonic Pricing Method</i> (HPM) berupa interval dengan nilai terendah yaitu 4,054 dan nilai tertinggi yaitu 4,176.</li>
+        </ul>
+    </div>
+
+    <div class="map-box">
+    <h3>Peta</h3>
+    <div class="map-row">
+        <div class="map-item">
+          <h4>Peta Nilai Guna Langsung</h4>
+          <img src="img/peta_gl_celosia.png" alt="Peta Guna Langsung Taman Bunga Celosia">
+        </div>
+        <div class="map-item">
+          <h4>Peta Nilai Keberadaan</h4>
+          <img src="img/peta_k_celosia.png" alt="Peta Keberadaan Taman Bunga Celosia">
+        </div>
+        <div class="map-item">
+          <h4>Peta Nilai Total Ekonomi</h4>
+          <img src="img/peta_te_celosia.png" alt="Peta Total Ekonomi Taman Bunga Celosia">
+        </div>
+    </div>
+    </div>
+
+    <div class="info-var">
+        <h3>Variabel Pengaruh TEV</h3>
+        <p>Hasil TCM, CVM, dan HPM, masing-masing dipengaruhi oleh variabel yang dapat merepresentasikan karakteristik responden. Penjelasan variabel pada setiap metode sebagai berikut:</p>
+          <div class="chart-group-box">
+            <h4>Variabel <span>Travel Cost Method</span> (TCM)</h4>
+            <p>Berdasarkan 244 responden, berikut variasi jawaban yang diperoleh pada masing-masing variabel.</p>
+            <div class="chart-container">
+              <div class="chart-box">
+                <h5>Frekuensi Kunjungan</h5>
+                <canvas id="pieKunjunganCelosia"></canvas>
+              </div>
+              <div class="chart-box">
+                <h5><i>Total Cost</i> (Rp)</h5>
+                <canvas id="pieTotalCelosia"></canvas>
+              </div> 
+              <div class="chart-box">
+                <h5>Usia</h5>
+                <canvas id="pieUsiaCelosia"></canvas>
+              </div>
+              <div class="chart-box">
+                <h5>Pendidikan</h5>
+                <canvas id="piePendidikanCelosia"></canvas>
+              </div> 
+              <div class="chart-box">
+                <h5>Pendapatan Per-Tahun (Rp)</h5>
+                <canvas id="piePendapatanCelosia"></canvas>
+              </div>
+              <div class="chart-box">
+                <h5>Lama Kunjungan</h5>
+                <canvas id="pieLamaCelosia"></canvas>
+              </div>
+              <div class="chart-box">
+                <h5>Alternatif Wisata</h5>
+                <canvas id="pieAlternatifCelosia"></canvas>
+              </div>
+            </div>
+          </div>
+
+          <div class="chart-group-box">
+            <h4>Variabel <span>Contingent Valuation Method</span> (CVM)</h4>
+            <p>Berdasarkan 61 responden, berikut variasi jawaban yang diperoleh pada masing-masing variabel.</p>
+            <div class="chart-container">
+              <div class="chart-box">
+                <h5>Pekerjaan</h5>
+                <canvas id="piePekerjaanCelosia"></canvas>
+              </div>
+              <div class="chart-box">
+                <h5>WTP</h5>
+                <canvas id="pieWTPCelosia"></canvas>
+              </div> 
+              <div class="chart-box">
+                <h5>Nilai Keberadaan</h5>
+                <canvas id="pieKeberadaanCelosia"></canvas>
+              </div>
+              <div class="chart-box">
+                <h5>Usia</h5>
+                <canvas id="pieUsiaCVMCelosia"></canvas>
+              </div> 
+              <div class="chart-box">
+                <h5>Pendidikan</h5>
+                <canvas id="piePendidikanCVMCelosia"></canvas>
+              </div>
+              <div class="chart-box">
+                <h5>Jumlah Anggota Keluarga</h5>
+                <canvas id="pieKeluargaCelosia"></canvas>
+              </div>
+              <div class="chart-box">
+                <h5>Pendapatan</h5>
+                <canvas id="piePendapatanCVMCelosia"></canvas>
+              </div>
+              <div class="chart-box">
+                <h5>Nilai Manfaat</h5>
+                <canvas id="pieManfaatCelosia"></canvas>
+              </div>
+              <div class="chart-box">
+                <h5>Nilai Kepentingan</h5>
+                <canvas id="pieKepentinganCelosia"></canvas>
+              </div>
+              <div class="chart-box">
+                <h5>Konversi</h5>
+                <canvas id="pieKonversiCelosia"></canvas>
+              </div>
+              <div class="chart-box">
+                <h5>Partisipasi</h5>
+                <canvas id="piePartisipasiCelosia"></canvas>
+              </div>
+            </div>
+          </div>
+
+          <div class="chart-group-box-hpm">
+            <h4>Variabel <span>Hedonic Pricing Method</span> (HPM)</h4>
+            <p>Berdasarkan 192 responden, berikut variasi jawaban yang diperoleh pada masing-masing variabel.</p>
+            <div class="chart-box-hpm">
+              <canvas id="barHPMCelosia"></canvas>
+            </div>
+          </div>
+    </div>
+  </section>
+  <!--Celosia Section End-->
+
+  <!--Peta Section Start-->
+  <section class="map page-section" id="map">
+    <h2>PETA</h2>
+  <div class="dual-map-container">
+    <div class="map-box-side">
+      <h3>Candi Gedong Songo</h3>
+      <div id="map-candi"></div>
+    </div>
+    <div class="map-box-side">
+      <h3>Taman Bunga Celosia</h3>
+      <div id="map-celosia"></div>
+    </div>
+  </div>
+
+  <div class="map-box">
+    <h3>Legenda</h3>
+    <div class="map-row">
+      <div class="map-item">
+      <img src="img/legenda.png" alt="Legenda Peta">
+      </div>
+    </div>
+  </div>
+
+  <div class="map-box">
+    <h3>Peta Utilitas</h3>
+    <div class="map-row">
+      <div class="map-item">
+        <h4>Candi Gedong Songo dan Taman Bunga Celosia</h4>
+        <img src="img/peta_utilitas.png" alt="Peta Utilitas">
+      </div>
+    </div>
+  </div>
+  </section>
+  <!--Peta Section End-->  
+
+  <!--Layanan Section Start-->
+  <section class="service page-section" id="service">
+    <h2>LAYANAN</h2>
+    <div class="service-card">
+      <h3>Candi Gedong Songo</h3>
+      <p><span>Alamat:</span> Candi Gedong Songo, Desa Candi, Kec Bandungan, Kab Semarang, Jawa Tengah</p>
+      <p><span>Jam Operasional:</span> Setiap hari, pukul 07.00 - 17.00 WIB</p>
+      <p><span>Harga Tiket Masuk:</span></p>
+      <ul>
+        <li>Wisatawan Lokal (Senin–Jumat): <span>Rp10.000</span></li>
+        <li>Wisatawan Lokal (Sabtu–Minggu): <span>Rp15.000</span></li>
+        <li>Wisatawan Asing: <span>Rp75.000</span></li>
+      </ul>
+      <p><span>Kontak:</span> Dinas Pariwisata Kab. Semarang – (024) 6921211</p>
+    </div>
+    <div class="service-card">
+      <h3>Taman Bunga Celosia</h3>
+      <p><span>Alamat:</span> Jl. Gedong Songo Km 5, Desa Candi, Kec Bandungan, Kab Semarang, Jawa Tengah</p>
+      <p><span>Jam Operasional:</span> Setiap hari, pukul 08.00 - 17.00 WIB</p>
+      <p><span>Harga Tiket Masuk:</span></p>
+      <ul>
+        <li>Tiket regular: <span>Rp30.000</span> (<i>weekday</i>) dan <span>Rp35.000</span> (<i>weekend</i>)</li>
+        <li>Tiket terusan: <span>Rp75.000</span> (<i>weekday</i>) dan <span>Rp85.000</span> (<i>weekend</i>)</li>
+        <li>Tiket turis: <span>Rp60.000</span> (tiket regular) dan <span>Rp100.000</span> (tiket terusan)</li>
+      </ul>
+      <p><span>Kontak:</span> 0821-3746-1769 (Marketing Celosia)</p>
+    </div>
+  </section>
+  <!--Layanan Section End-->
+  </main>
+  <!--Main Content End-->
+
+  <!--Footer Start-->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="img/undip.png" alt="Logo Universitas Diponegoro" />
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p>Email: <a href="mailto:ranisa@students.undip.ac.id">ranisa@students.undip.ac.id</a></p>
+        <p>Email: <a href="mailto:shabrinarahmawati@students.undip.ac.id">shabrinarahmawati@students.undip.ac.id</a></p>
+      </div>
+      <div class="footer-contact">
+        <h4>Supervisors</h4>
+        <p>Arwan Putra Wijaya, S.T., M.T</p>
+        <p>Shofiyatul Qoyimah, S.T., M.S.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Geodetic Engineering Diponegoro University</p>
+      <p>&copy; Ranisa Rahma Setiabudi & Shabrina Rahmawati 2025</p>
+    </div>
+  </footer>
+  <!--Footer End-->
+
+  <!--Feather Icons-->
+  <script>
+      feather.replace();
+  </script>
+
+  <!--My Javascript-->
+  <script src="js/script.js"></script>
+
+  <!--Chart-->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+  <script src="js/chart.js"></script>
+
+  <!--Gambar-->
+  <div id="imgFullscreenOverlay" onclick="this.style.display='none'">
+    <img id="fullscreenImg" src="" alt="Fullscreen Image">
+  </div>
+
+  <!--Peta-->
+  <script>
+
+  //Layer
+  var kawasanCandi = L.geoJSON(null, {style: {color: '#ffff00', fillOpacity: 1}});
+  var kawasanCelosia = L.geoJSON(null, {style: {color: '#e31a1c', fillOpacity: 1}});
+  var desaLayer = L.geoJSON(null, {
+  style: function(feature) {
+    function getFillColor(namobj) {
+      switch (namobj) {
+        case 'Bandungan': return '#66c2a5';
+        case 'Banyukuning': return '#fc8d62';
+        case 'Candi': return '#fb9a99';
+        case 'Duren': return '#e78ac3';
+        case 'Jetis': return '#a6d854';
+        case 'Jimbaran': return '#ffd92f';
+        case 'Kenteng': return '#e5c494';
+        case 'Mlilir': return '#b3b3b3';
+        case 'Pakopen': return '#cab2d6';
+        case 'Sidomukti': return '#ffff00';
+        default: return '#cccccc';
+      }
+    }
+    return {
+      fillColor: getFillColor(feature.properties.namobj),
+      fillOpacity: 1,
+      weight: 0.1,
+      color: "#000000"
+    };
+  },
+  onEachFeature: function(feature, layer) {
+    const nama = feature.properties.namobj || "Desa";
+    layer.bindPopup(`<strong>${nama}</strong>`);
+  }
+  });
+  var fasilitasKesehatanCandi = L.geoJSON(null, {
+  pointToLayer: function (feature, latlng) {
+    return L.marker(latlng, {
+      icon: L.divIcon({
+        className: 'icon-kesehatan',
+        iconSize: [20, 20],
+        html: `
+          <div style="
+            width: 20px; height: 20px;
+            background-color: #33a02c;
+            position: relative;
+            border-radius: 3px;
+          ">
+            <div style="
+              color: white;
+              font-size: 14px;
+              font-weight: bold;
+              position: absolute;
+              top: 0; bottom: 0; left: 0; right: 0;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            ">+</div>
+          </div>
+        `
+      })
+    });
+  }
+  });
+  var fasilitasKesehatanCelosia = L.geoJSON(null, {
+  pointToLayer: function (feature, latlng) {
+    return L.marker(latlng, {
+      icon: L.divIcon({
+        className: 'icon-kesehatan',
+        iconSize: [20, 20],
+        html: `
+          <div style="
+            width: 20px; height: 20px;
+            background-color: #33a02c;
+            position: relative;
+            border-radius: 3px;
+          ">
+            <div style="
+              color: white;
+              font-size: 14px;
+              font-weight: bold;
+              position: absolute;
+              top: 0; bottom: 0; left: 0; right: 0;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            ">+</div>
+          </div>
+        `
+      })
+    });
+  }
+  });
+  var fasilitasPelayananUmumCandi = L.geoJSON(null, {
+  pointToLayer: function (feature, latlng) {
+    return L.marker(latlng, {
+      icon: L.divIcon({
+        className: 'icon-umum',
+        iconSize: [20, 20],
+        html: `
+          <div style="
+            width: 20px; height: 20px;
+            background-color: #1f78b4;
+            position: relative;
+            border-radius: 3px;
+          ">
+            <div style="
+                font-size: 14px;
+                font-weight: bold;
+                position: absolute;
+                top: 0; bottom: 0; left: 0; right: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              ">🏛️</div>
+          </div>
+        `
+      })
+    });
+  }
+  });
+  var fasilitasPelayananUmumCelosia = L.geoJSON(null, {
+  pointToLayer: function (feature, latlng) {
+    return L.marker(latlng, {
+      icon: L.divIcon({
+        className: 'icon-umum',
+        iconSize: [20, 20],
+        html: `
+          <div style="
+            width: 20px; height: 20px;
+            background-color: #1f78b4;
+            position: relative;
+            border-radius: 3px;
+          ">
+            <div style="
+                font-size: 14px;
+                font-weight: bold;
+                position: absolute;
+                top: 0; bottom: 0; left: 0; right: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              ">🏛️</div>
+          </div>
+        `
+      })
+    });
+  }
+  });
+  var fasilitasPenginapanCandi = L.geoJSON(null, {
+  pointToLayer: function (feature, latlng) {
+    return L.marker(latlng, {
+      icon: L.divIcon({
+        className: 'icon-penginapan',
+        iconSize: [20, 20],
+        html: `
+          <div style="
+              width: 20px; height: 20px;
+              background-color: #984ea3;
+              position: relative;
+              border-radius: 3px;
+            ">
+              <div style="
+                font-size: 14px;
+                font-weight: bold;
+                position: absolute;
+                top: 0; bottom: 0; left: 0; right: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              ">🛏️</div>
+            </div>
+        `
+      })
+    });
+  }
+  });
+  var fasilitasPenginapanCelosia = L.geoJSON(null, {
+  pointToLayer: function (feature, latlng) {
+    return L.marker(latlng, {
+      icon: L.divIcon({
+        className: 'icon-penginapan',
+        iconSize: [20, 20],
+        html: `
+          <div style="
+              width: 20px; height: 20px;
+              background-color: #984ea3;
+              position: relative;
+              border-radius: 3px;
+            ">
+              <div style="
+                font-size: 14px;
+                font-weight: bold;
+                position: absolute;
+                top: 0; bottom: 0; left: 0; right: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              ">🛏️</div>
+            </div>
+        `
+      })
+    });
+  }
+  });
+  var fasilitasPerdaganganCandi = L.geoJSON(null, {
+  pointToLayer: function (feature, latlng) {
+    return L.marker(latlng, {
+      icon: L.divIcon({
+        className: 'icon-perdagangan',
+        iconSize: [20, 20],
+        html: `
+          <div style="
+              width: 20px; height: 20px;
+              background-color: #ff7f00;
+              position: relative;
+              border-radius: 3px;">
+              <div style="
+                font-size: 14px;
+                font-weight: bold;
+                position: absolute;
+                top: 0; bottom: 0; left: 0; right: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              ">🛒</div>
+            </div>
+        `
+      })
+    });
+  }
+  });
+  var fasilitasPerdaganganCelosia = L.geoJSON(null, {
+  pointToLayer: function (feature, latlng) {
+    return L.marker(latlng, {
+      icon: L.divIcon({
+        className: 'icon-perdagangan',
+        iconSize: [20, 20],
+        html: `
+          <div style="
+              width: 20px; height: 20px;
+              background-color: #ff7f00;
+              position: relative;
+              border-radius: 3px;">
+              <div style="
+                font-size: 14px;
+                font-weight: bold;
+                position: absolute;
+                top: 0; bottom: 0; left: 0; right: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              ">🛒</div>
+            </div>
+        `
+      })
+    });
+  }
+  });
+  var fasilitasPeribadatanCandi = L.geoJSON(null, {
+  pointToLayer: function (feature, latlng) {
+    return L.marker(latlng, {
+      icon: L.divIcon({
+        className: 'icon-peribadatan',
+        iconSize: [20, 20],
+        html: `
+          <div style="
+              width: 20px; height: 20px;
+              background-color: #e31a1c;
+              position: relative;
+              border-radius: 3px;">
+              <div style="
+                color: white;
+                font-size: 14px;
+                font-weight: bold;
+                position: absolute;
+                top: 0; bottom: 0; left: 0; right: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              ">🕌</div>
+            </div>
+        `
+      })
+    });
+  }
+  });
+  var fasilitasPeribadatanCelosia = L.geoJSON(null, {
+  pointToLayer: function (feature, latlng) {
+    return L.marker(latlng, {
+      icon: L.divIcon({
+        className: 'icon-peribadatan',
+        iconSize: [20, 20],
+        html: `
+          <div style="
+              width: 20px; height: 20px;
+              background-color: #e31a1c;
+              position: relative;
+              border-radius: 3px;">
+              <div style="
+                color: white;
+                font-size: 14px;
+                font-weight: bold;
+                position: absolute;
+                top: 0; bottom: 0; left: 0; right: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              ">🕌</div>
+            </div>
+        `
+      })
+    });
+  }
+  });
+  var fasilitasTransportasiCandi = L.geoJSON(null, {
+  pointToLayer: function (feature, latlng) {
+    return L.marker(latlng, {
+      icon: L.divIcon({
+        className: 'icon-transportasi',
+        iconSize: [20, 20],
+        html: `
+          <div style="
+              width: 20px;
+              height: 20px;
+              background-color: #a65628;
+              position: relative;
+              border-radius: 3px;">
+              <div style="
+                color: white;
+                font-size: 14px;
+                font-weight: bold;
+                position: absolute;
+                top: 0; bottom: 0; left: 0; right: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              ">🚌</div>
+            </div>
+        `
+      })
+    });
+  }
+  });
+  var fasilitasTransportasiCelosia = L.geoJSON(null, {
+  pointToLayer: function (feature, latlng) {
+    return L.marker(latlng, {
+      icon: L.divIcon({
+        className: 'icon-transportasi',
+        iconSize: [20, 20],
+        html: `
+          <div style="
+              width: 20px;
+              height: 20px;
+              background-color: #a65628;
+              position: relative;
+              border-radius: 3px;">
+              <div style="
+                color: white;
+                font-size: 14px;
+                font-weight: bold;
+                position: absolute;
+                top: 0; bottom: 0; left: 0; right: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              ">🚌</div>
+            </div>
+        `
+      })
+    });
+  }
+  });
+  var radiusCandi = L.geoJSON(null, {
+  style: {
+    color: '#ff0000',
+    weight: 2
+  },
+  onEachFeature: function (feature, layer) {
+    const nama = feature.properties.name || "Radius 3 KM Candi";
+    layer.bindPopup(`<strong>${nama}</strong>`);
+  }
+  });
+  var radiusCelosia = L.geoJSON(null, {
+  style: {
+    color: '#1f78b4',
+    weight: 2
+  },
+  onEachFeature: function (feature, layer) {
+    const nama = feature.properties.name || "Radius 3 KM Celosia";
+    layer.bindPopup(`<strong>${nama}</strong>`);
+  }
+  });
+  var batasKabupatenLayer = L.layerGroup();
+  var batasKecamatanLayer = L.layerGroup();
+  var batasDesaLayer = L.layerGroup();
+  var jalanArteriLayer = L.layerGroup();
+  var jalanKolektorLayer = L.layerGroup();
+  var jalanLokalLayer = L.layerGroup();
+  var jalanLainLayer = L.layerGroup();
+  var desaCandi = L.geoJSON(null, {style: {color: '#fb9a99', fillOpacity: 0.5}});
+
+  //GeoJSON
+  fetch('data/Kawasan_Candi_Gedong_Songo_84.geojson').then(r => r.json()).then(d => kawasanCandi.addData(d));
+  fetch('data/Kawasan_Taman_Bunga_Celosia_84.geojson').then(r => r.json()).then(d => kawasanCelosia.addData(d));
+  fetch('data/Desa_84.geojson').then(r => r.json()).then(d => desaLayer.addData(d));
+  fetch('data/Fasilitas_Kesehatan_84.geojson').then(r => r.json()).then(d => {fasilitasKesehatanCandi.addData(d); fasilitasKesehatanCelosia.addData(d)});
+  fetch('data/Fasilitas_Pelayanan_Umum_84.geojson').then(r => r.json()).then(d => {fasilitasPelayananUmumCandi.addData(d); fasilitasPelayananUmumCelosia.addData(d)});
+  fetch('data/Fasilitas_Penginapan_84.geojson').then(r => r.json()).then(d => {fasilitasPenginapanCandi.addData(d); fasilitasPenginapanCelosia.addData(d)});
+  fetch('data/Fasilitas_Perdagangan_84.geojson').then(r => r.json()).then(d => {fasilitasPerdaganganCandi.addData(d); fasilitasPerdaganganCelosia.addData(d)});
+  fetch('data/Fasilitas_Peribadatan_84.geojson').then(r => r.json()).then(d => {fasilitasPeribadatanCandi.addData(d); fasilitasPeribadatanCelosia.addData(d)});
+  fetch('data/Fasilitas_Transportasi_84.geojson').then(r => r.json()).then(d => {fasilitasTransportasiCandi.addData(d); fasilitasTransportasiCelosia.addData(d)});
+  fetch('data/Radius_3KM_Candi.geojson').then(response => response.json()).then(data => radiusCandi.addData(data));
+  fetch('data/Radius_3KM_Celosia.geojson').then(response => response.json()).then(data => radiusCelosia.addData(data));
+  fetch('data/Batas_Kabupaten_84.geojson')
+  .then(response => response.json())
+  .then(data => {
+    var batasKabupatenBase = L.geoJSON(data, {
+      style: {
+        color: '#ffffff',
+        weight: 5.3,
+        lineCap: 'round',
+        lineJoin: 'round'
+      }
+    });
+    var batasKabupatenDash = L.geoJSON(data, {
+      style: {
+        color: '#000000',
+        weight: 3.03,
+        lineCap: 'round',
+        lineJoin: 'round',
+        dashArray: '1 4 8 4'
+      },
+      onEachFeature: function (feature, layer) {
+        const nama = feature.properties.name || "Batas Kabupaten";
+        layer.bindPopup(`<strong>${nama}</strong>`);
+      }
+    });
+    batasKabupatenLayer.addLayer(batasKabupatenBase);
+    batasKabupatenLayer.addLayer(batasKabupatenDash);
+  });
+  fetch('data/Batas_Kecamatan_84.geojson')
+  .then(response => response.json())
+  .then(data => {
+    var batasKecamatanBase = L.geoJSON(data, {
+      style: {
+        color: '#ffd480',
+        weight: 4.54,
+        lineCap: 'round',
+        lineJoin: 'round'
+      }
+    });
+    var batasKecamatanDash = L.geoJSON(data, {
+      style: {
+        color: '#000000',
+        weight: 2.27,
+        lineCap: 'round',
+        lineJoin: 'round',
+        dashArray: '1 6 1 6 1 6 1 6 12 8'
+      },
+      onEachFeature: function (feature, layer) {
+        const nama = feature.properties.name || "Batas Kecamatan";
+        layer.bindPopup(`<strong>${nama}</strong>`);
+      }
+    });
+    batasKecamatanLayer.addLayer(batasKecamatanBase);
+    batasKecamatanLayer.addLayer(batasKecamatanDash);
+  });
+  fetch('data/Batas_Desa_84.geojson')
+  .then(response => response.json())
+  .then(data => {
+    var batasDesaYellow = L.geoJSON(data, {
+      style: {
+        color: '#ffff00',
+        weight: 3.8,
+        lineCap: 'round',
+        lineJoin: 'round'
+      }
+    });
+    var batasDesaBlackDash = L.geoJSON(data, {
+      style: {
+        color: '#000000',
+        weight: 1.5,
+        lineCap: 'round',
+        lineJoin: 'round',
+        dashArray: '1 3 1 3 1 3 1 3 6 4'
+      },
+      onEachFeature: function (feature, layer) {
+        const nama = feature.properties.name || "Batas Desa";
+        layer.bindPopup(`<strong>${nama}</strong>`);
+      }
+    });
+    batasDesaLayer.addLayer(batasDesaYellow);
+    batasDesaLayer.addLayer(batasDesaBlackDash);
+  });
+  fetch('data/Jalan_Arteri_84.geojson')
+  .then(response => response.json())
+  .then(data => {
+    var jalanArteriBlack = L.geoJSON(data, {
+      style: {
+        color: '#000000',
+        weight: 3.2,
+        lineCap: 'round',
+        lineJoin: 'round'
+      }
+    });
+    var jalanArteriMagenta = L.geoJSON(data, {
+      style: {
+        color: '#ff80ff',
+        weight: 3,
+        lineCap: 'round',
+        lineJoin: 'round'
+      },
+      onEachFeature: function (feature, layer) {
+        const nama = feature.properties.name || "Jalan Arteri";
+        layer.bindPopup(`<strong>${nama}</strong>`);
+      }
+    });
+    jalanArteriLayer.addLayer(jalanArteriBlack);
+    jalanArteriLayer.addLayer(jalanArteriMagenta);
+  });
+  fetch('data/Jalan_Kolektor_84.geojson')
+  .then(response => response.json())
+  .then(data => {
+    var jalanKolektorBlack = L.geoJSON(data, {
+      style: {
+        color: '#000000',
+        weight: 2.2,
+        lineCap: 'round',
+        lineJoin: 'round'
+      }
+    });
+    var jalanKolektorMagenta = L.geoJSON(data, {
+      style: {
+        color: '#ffb3ff',
+        weight: 2,
+        lineCap: 'round',
+        lineJoin: 'round'
+      },
+      onEachFeature: function (feature, layer) {
+        const nama = feature.properties.name || "Jalan Kolektor";
+        layer.bindPopup(`<strong>${nama}</strong>`);
+      }
+    });
+    jalanKolektorLayer.addLayer(jalanKolektorBlack);
+    jalanKolektorLayer.addLayer(jalanKolektorMagenta);
+  });
+  fetch('data/Jalan_Lokal_84.geojson')
+  .then(response => response.json())
+  .then(data => {
+    var jalanLokalBlack = L.geoJSON(data, {
+      style: {
+        color: '#000000',
+        weight: 1.2,
+        lineCap: 'round',
+        lineJoin: 'round'
+      }
+    });
+    var jalanLokalOrange = L.geoJSON(data, {
+      style: {
+        color: '#ff8766',
+        weight: 1,
+        lineCap: 'round',
+        lineJoin: 'round'
+      },
+      onEachFeature: function (feature, layer) {
+        const nama = feature.properties.name || "Jalan Lokal";
+        layer.bindPopup(`<strong>${nama}</strong>`);
+      }
+    });
+    jalanLokalLayer.addLayer(jalanLokalBlack);
+    jalanLokalLayer.addLayer(jalanLokalOrange);
+  });
+  fetch('data/Jalan_Lain_84.geojson')
+  .then(response => response.json())
+  .then(data => {
+    var jalanLainBlack = L.geoJSON(data, {
+      style: {
+        color: '#000000',
+        weight: 0.7,
+        lineCap: 'round',
+        lineJoin: 'round'
+      }
+    });
+    var jalanLainOrange = L.geoJSON(data, {
+      style: {
+        color: '#ffad66',
+        weight: 0.5,
+        lineCap: 'round',
+        lineJoin: 'round'
+      },
+      onEachFeature: function (feature, layer) {
+        const nama = feature.properties.name || "Jalan Lain";
+        layer.bindPopup(`<strong>${nama}</strong>`);
+      }
+    });
+    jalanLainLayer.addLayer(jalanLainBlack);
+    jalanLainLayer.addLayer(jalanLainOrange);
+  });
+  fetch('data/Desa_Candi_84.geojson').then(r => r.json()).then(d => desaCandi.addData(d));
+
+  //Candi Gedong Songo
+  mapCandi.on('enterFullscreen exitFullscreen', function () {
+  setTimeout(() => mapCandi.invalidateSize(), 300);
+  });
+
+  //Layer Control
+  var overlayCandi = {
+    "Fasilitas Kesehatan": fasilitasKesehatanCandi,
+    "Fasilitas Pelayanan Umum": fasilitasPelayananUmumCandi,
+    "Fasilitas Penginapan": fasilitasPenginapanCandi,
+    "Fasilitas Perdagangan": fasilitasPerdaganganCandi,
+    "Fasilitas Peribadatan": fasilitasPeribadatanCandi,
+    "Fasilitas Transportasi": fasilitasTransportasiCandi,
+    "Radius 3 KM Candi Gedong Songo": radiusCandi,
+    "Batas Kabupaten": batasKabupatenLayer,
+    "Batas Kecamatan": batasKecamatanLayer,
+    "Batas Desa": batasDesaLayer,
+    "Jalan Arteri": jalanArteriLayer,
+    "Jalan Kolektor": jalanKolektorLayer,
+    "Jalan Lokal": jalanLokalLayer,
+    "Jalan Lain": jalanLainLayer,
+    "Kawasan Wisata Candi Gedong Songo": kawasanCandi,
+    "Desa Candi": desaCandi,
+    "Desa di Kecamatan Bandungan": desaLayer
+  };
+  L.control.layers(null, overlayCandi).addTo(mapCandi);
+
+  //Candi Celosia
+  mapCelosia.on('enterFullscreen exitFullscreen', function () {
+  setTimeout(() => mapCelosia.invalidateSize(), 300);
+  });
+
+  //Layer Control
+  var overlayCelosia = {
+    "Fasilitas Kesehatan": fasilitasKesehatanCelosia,
+    "Fasilitas Pelayanan Umum": fasilitasPelayananUmumCelosia,
+    "Fasilitas Penginapan": fasilitasPenginapanCelosia,
+    "Fasilitas Perdagangan": fasilitasPerdaganganCelosia,
+    "Fasilitas Peribadatan": fasilitasPeribadatanCelosia,
+    "Fasilitas Transportasi": fasilitasTransportasiCelosia,
+    "Radius 3 KM Taman Bunga Celosia": radiusCelosia,
+    "Batas Kabupaten": batasKabupatenLayer,
+    "Batas Kecamatan": batasKecamatanLayer,
+    "Batas Desa": batasDesaLayer,
+    "Jalan Arteri": jalanArteriLayer,
+    "Jalan Kolektor": jalanKolektorLayer,
+    "Jalan Lokal": jalanLokalLayer,
+    "Jalan Lain": jalanLainLayer,
+    "Kawasan Wisata Taman Bunga Celosia": kawasanCelosia,
+    "Desa Candi": desaCandi,
+    "Desa di Kecamatan Bandungan": desaLayer
+  };
+  L.control.layers(null, overlayCelosia).addTo(mapCelosia);
+  </script>
+
+</body>
+</html>
